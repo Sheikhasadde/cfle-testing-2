@@ -2,6 +2,13 @@
 const { ClientEncryption } = require('mongodb-client-encryption');
 const base64 = require('uuid-base64');
 const mongoose = require('mongoose');
+const express = require("express");
+const app = express();
+
+
+const server = app.listen(8000, () => {
+  console.log("Server running on http://localhost:8000/");
+});
 
 function getEncryptionKey() {
     const arr = [];
