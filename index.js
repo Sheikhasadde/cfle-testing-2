@@ -57,4 +57,6 @@ async function main() {
     await Model.create({ name: 'testing' });
 }
 
-main().catch(console.log)
+main()
+    .then(console.log('Server is running...!'))
+    .catch(console.log);
