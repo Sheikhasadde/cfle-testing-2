@@ -5,9 +5,8 @@ const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
 
-
-const server = app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000/");
+const server = app.listen(8080, () => {
+  console.log("Server running on http://localhost:" + 8080 + "/");
 });
 
 function getEncryptionKey() {
