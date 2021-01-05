@@ -28,6 +28,7 @@ const URL =
 const autoEncryption = {
   keyVaultNamespace,
   kmsProviders,
+  extraOptions: { mongocryptdSpawnPath: "/mongocryptd" },
 };
 
 async function main() {
