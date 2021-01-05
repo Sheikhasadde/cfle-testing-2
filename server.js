@@ -4,6 +4,7 @@ const base64 = require("uuid-base64");
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
+"./"
 
 const server = app.listen(8000, () => {
   console.log("Server running on http://localhost:" + 8000 + "/");
@@ -28,7 +29,7 @@ const URL =
 const autoEncryption = {
   keyVaultNamespace,
   kmsProviders,
-  extraOptions: { mongocryptdSpawnPath: "/mongocryptd" },
+  extraOptions: { mongocryptdSpawnPath: "./vender/mongocryptd_bin/mongocryptd" },
 };
 
 async function main() {
