@@ -6,8 +6,8 @@ const express = require("express");
 const app = express();
 "./"
 
-const server = app.listen(8000, () => {
-  console.log("Server running on http://localhost:" + 8000 + "/");
+const server = app.listen(process.env.PORT || 5000, () => {
+  console.log("Server running on /" + server);
 });
 
 function getEncryptionKey() {
